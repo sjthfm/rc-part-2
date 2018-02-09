@@ -4,11 +4,11 @@ import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@EnableAutoConfiguration
+//@RestController
+//@EnableAutoConfiguration
 public class Driver {
 
-	@RequestMapping("/")
+/*	@RequestMapping("/")
 	String home() {
 		return "Hello World!";
 	}
@@ -33,7 +33,7 @@ public class Driver {
 	String supRating() {
 		return supRating.returnRatings();
 	}
-
+*/
 	private static PriceOrderOfCar 	priceOrder; // Prints out order of cars by price
 
 	private static CarSIPP 			carSIPP; //specification of the vehicles based on their SIPP
@@ -56,7 +56,7 @@ public class Driver {
 
 		vehicleScore= new VehicleScore(vehicles);
 
-		SpringApplication.run(Driver.class, args);
+	//	SpringApplication.run(Driver.class, args);
 	}
 
 }
